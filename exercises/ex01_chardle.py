@@ -1,4 +1,4 @@
-"""EX01 - Chardle: a miniature version of Wordle"""
+"""EX01 - Chardle: a miniature version of Wordle!"""
 
 __author__ = "730566370"
 
@@ -7,12 +7,12 @@ if len(attempt_word) != 5:
     print("Error: Word must contain 5 characters")
     exit()
 
-attempt_chr: chr = input("Enter a single character: ")
+attempt_chr: str = input("Enter a single character: ")
 if len(attempt_chr) != 1:
     print("Error: Character must be a single character")
     exit()
 
-print(("Searching for " + attempt_chr)+ " in " + attempt_word)
+print("Searching for " + attempt_chr + " in " + attempt_word)
 
 count = int(0)
 
